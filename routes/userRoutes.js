@@ -13,6 +13,7 @@ router.post(
 );
 
 router.post("/login", userControllers.userLogin);
+router.post("/verifyotp",userControllers.verifyOtp)
 
 router.get("/verifytoken", userAuth, (req, res) => {
   res.status(200).json({
